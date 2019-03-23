@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Tarea1AdrianDavia.jnlp">
+  <information>
+    <title>Tarea1AdrianDavia</title>
+    <vendor>Adrian</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Tarea1AdrianDavia.jar" size="7451" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Tarea1AdrianDavia" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="conecta4.Tarea1AdrianDavia"  name="Tarea1AdrianDavia" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="743.0" style="-fx-background-color: #e1e167;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="conecta4.FXMLConecta4DocumentController">
+   <children>
+      <GridPane fx:id="gridPanel" alignment="BOTTOM_CENTER" prefHeight="831.0" prefWidth="619.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="622.0" minHeight="10.0" prefHeight="622.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox fx:id="vB0" alignment="BOTTOM_CENTER" style="-fx-border-color: black;" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </VBox>
+            <VBox fx:id="vB1" alignment="BOTTOM_CENTER" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></VBox>
+            <VBox fx:id="vB2" alignment="BOTTOM_CENTER" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></VBox>
+            <VBox fx:id="vB3" alignment="BOTTOM_CENTER" style="-fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="PALEGREEN" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></VBox>
+            <VBox fx:id="vB4" alignment="BOTTOM_CENTER" style="-fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></VBox>
+            <VBox fx:id="vB5" alignment="BOTTOM_CENTER" style="-fx-border-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></VBox>
+            <VBox fx:id="vB6" alignment="BOTTOM_CENTER" style="-fx-border-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <children>
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="MISTYROSE" focusTraversable="true" onMouseDragged="#circuloD" onMousePressed="#circuloP" onMouseReleased="#circuloR" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></VBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MISTYROSE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PALEGREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="6" />
+            <Label fx:id="labelGanador" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="300.0" textFill="#cc2f49" GridPane.columnIndex="2" GridPane.columnSpan="3">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </GridPane>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="reiniciarJuego" mnemonicParsing="false" onAction="#reiniciarJuego" text="Jugar de nuevo" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
