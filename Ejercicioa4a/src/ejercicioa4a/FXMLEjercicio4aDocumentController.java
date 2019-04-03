@@ -19,8 +19,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.ChoiceDialog;
 import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
@@ -39,7 +41,7 @@ public class FXMLEjercicio4aDocumentController implements Initializable {
     @FXML
     private Button ebay;
     @FXML
-    private ToggleGroup comprarEn;
+    private Menu comprarEn;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -61,13 +63,13 @@ public class FXMLEjercicio4aDocumentController implements Initializable {
 
     @FXML
     private void comprar(ActionEvent event) {
-        if(comprarEn.getToggles().get(0).isSelected()) {
+        if(((CheckMenuItem) comprarEn.getItems().get(0)).isSelected()) {
             if(((Button) event.getSource()).equals(amazon)){
                 dialogoCompra("Amazon", false);
             } else if(((Button) event.getSource()).equals(ebay)){
                 dialogoCompra("Ebay", true);
             }
-        } else if (comprarEn.getToggles().get(1).isSelected()){
+        } else if(((CheckMenuItem) comprarEn.getItems().get(1)).isSelected()){
             if(((Button) event.getSource()).equals(amazon)){
                 dialogoCompra("Amazon", true);
             } else if(((Button) event.getSource()).equals(ebay)){
