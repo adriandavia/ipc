@@ -55,11 +55,8 @@ public class FXMLE3bDocumentController implements Initializable {
         misdatos.add(new Persona("Pepe", "García"));
         misdatos.add(new Persona("María", "Pérez"));
         datos = FXCollections.observableArrayList(misdatos);
-        tablaPersona.setItems(datos); // vinculacion entre la vista y el modelo     
-        //Hacer que se vean los datos.
-        columnaNombre.setCellValueFactory(cellData -> cellData.getValue().NombreProperty());
-        columnaApellido.setCellValueFactory(cellData -> cellData.getValue().ApellidosProperty());
-
+        verTabla(datos);
+        
         // oyente de foco para el TableView
         tablaPersona.focusedProperty().addListener(new ChangeListener<Boolean>(){	
             @Override
@@ -118,6 +115,35 @@ public class FXMLE3bDocumentController implements Initializable {
 
     private void update(ActionEvent event) {
     }
+
+    private void verTabla(ObservableList<Persona> dat){
+        tablaPersona.setItems(dat); // vinculacion entre la vista y el modelo     
+        //Hacer que se vean los datos.
+        columnaNombre.setCellValueFactory(cellData -> cellData.getValue().NombreProperty());
+        columnaApellido.setCellValueFactory(cellData -> cellData.getValue().ApellidosProperty());
+    }
+    @FXML
+    private void filtrarEntradas(ActionEvent event) throws IOException {
+        ObservableList<Persona> filtro = FXCollections.observableArrayList();
+        
+        Stage stage = new Stage();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/FXMLFiltrarDocument.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        stage.setTitle("Filtrar persona");
+        stage.setScene(scene);
+        ((FXMLFiltrarDocumentController) loader.getController()).initializeListPersona(datos, filtro);
+        //Para no poder abrir mil ventanas iguales
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.showAndWait(); 
+        verTabla(filtro);
+    }
+
+    @FXML
+    private void reeestablecerTabla(ActionEvent event) {
+        verTabla(datos);   
+    }
+    
     class PersonListCell extends ListCell<Persona> {
 
             @Override

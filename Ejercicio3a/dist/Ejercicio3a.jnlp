@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Ejercicio3a.jar" size="11561" download="eager" />
+    <jar href="Ejercicio3a.jar" size="10028" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Ejercicio3a" >
     <param name="requiredFXVersion" value="8.0+"/>

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLE3bDocumentController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLE3bDocumentController">
    <children>
       <TableView fx:id="tablaPersona" prefHeight="400.0" prefWidth="500.0">
         <columns>
@@ -20,21 +20,27 @@
       </TableView>
       <VBox alignment="TOP_CENTER" prefHeight="375.0" prefWidth="194.0">
          <children>
-            <Button fx:id="bAdd" mnemonicParsing="false" onAction="#añadir" prefWidth="67.0" text="Añadir">
+            <Button fx:id="bAdd" mnemonicParsing="false" onAction="#añadir" prefHeight="31.0" prefWidth="131.0" text="Añadir">
                <VBox.margin>
                   <Insets bottom="15.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="bUpdate" mnemonicParsing="false" onAction="#updateP" text="Modificar">
+            <Button fx:id="bUpdate" mnemonicParsing="false" onAction="#updateP" prefHeight="31.0" prefWidth="137.0" text="Modificar">
                <VBox.margin>
                   <Insets bottom="15.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="bDelete" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="67.0" text="Borrar">
+            <Button fx:id="bDelete" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="133.0" text="Borrar">
                <VBox.margin>
                   <Insets bottom="15.0" />
                </VBox.margin>
             </Button>
+            <Button mnemonicParsing="false" onAction="#filtrarEntradas" prefHeight="31.0" prefWidth="120.0" text="Filtro">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#reeestablecerTabla" prefHeight="31.0" prefWidth="139.0" text="Reestablecer" />
          </children>
          <HBox.margin>
             <Insets top="25.0" />
